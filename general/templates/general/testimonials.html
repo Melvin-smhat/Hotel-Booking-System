@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Testimonials - Smart Hotels</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'general/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'general/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'general/vendor/animate.css' %}/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'general/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'general/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Flattern - v4.9.0
+  * Template URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="ifeoluwaenoch9@gmail.com">ifeoluwaenoch9@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+234 811 7217 515</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="{% url 'index'%}">SMART</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="{% static 'general/img/logo.png' %}" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'index'%}">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'service'%}">Services</a></li>
+          <li><a class="active" href="{% url 'testimonials'%}">Testimonials</a></li>
+          <li><a href="{% url 'pricing'%}">Pricing</a></li>
+          <li><a href="{% url 'blog'%}">Blog</a></li>
+          <li><a href="{% url 'contact'%}">Contact</a></li>
+          <li><a href="{% url 'logout'%}">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Testimonials</h2>
+          <ol>
+            <li><a href="{% url 'index'%}">Home</a></li>
+            <li>Testimonials</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="testimonial-item">
+              <img src="{% static 'general/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Saul Paul</h3>
+              <h4>Customer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               Smart Hotels and Suits as the name implies they are the best.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item mt-4 mt-lg-0">
+              <img src="{% static 'general/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               As a designer i choose and vouch for them because they offer the best service for artisan like me.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'general/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Cooker</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I've been a professional cooker for a while now so when i see quality i recognise and respect that, Smart hotels has good food.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'general/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I'm a software developer and i use smart hotels to meet with my client, and their service is the best.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'general/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               I'm an enterpreneur and i will say smart hotels are doing great.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'general/img/testimonials/testimonials-6.jpg' %}" class="testimonial-img" alt="">
+              <h3>Emily Harison</h3>
+              <h4>Student</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I'm a student of Highland College of Technology and i once lodge in smart hotel, the good thing about them is they even have a standard library for student. So if you haven't been patronizing smart hotel, START NOW!!.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Smart Hotels</h3>
+            <p>
+              Block 23, Ikoyi<br>
+              Lagos, Nigeria<br>
+              <strong>Phone:</strong> +234 811 7217 515<br>
+              <strong>Email:</strong> ifeoluwaenoch9@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index'%}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about'%}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'service'%}">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'blog'%}">Blog</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'logout'%}">Logout</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'service'%}">Bar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'service'%}">Club</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'service'%}">Resturant</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'blog'%}">Read a post</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'pricing'%}">Book a room</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Check out for exclusive content based on our service</p>
+            <form action="" method="post">
+              {% csrf_token %}
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Smart</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/ -->
+          Developed by <a href="https://github.com/Funky">Abiola Enoch God'slove</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/Funky_1000" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/Funky" class="facebook"><i class="bx bxl-github"></i></a>
+        <a href="https://instagram.com/funky.s1" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://linkedin.com/EnochIfeoluwa" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'general/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'general/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'general/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'general/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'general/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'general/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'general/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'general/js/main.js' %}"></script>
+
+</body>
+
+</html>
